@@ -26,7 +26,7 @@ int main(void)
 	}
 	else
 	{
-		printf("Last digit of n is %d and is 0\n", n);
+		printf("Last digit of %d is %d and is 0\n", n, lDigit);
 	}
 	return (0);
 }
