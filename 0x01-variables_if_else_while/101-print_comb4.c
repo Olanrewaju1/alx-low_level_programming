@@ -25,7 +25,7 @@ int main(void)
 				putchar(i + 48);
 				putchar(j + 48);
 				putchar(k + 48);
-				if (i < 8)
+				if (i + 48 < 55)
 				{
 					putchar(44);
 					putchar(32);
