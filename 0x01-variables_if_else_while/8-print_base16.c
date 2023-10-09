@@ -15,11 +15,11 @@ int main(void)
 		putchar(n + 48);
 	}
 
-	int n = 'a';
+	int c = 'a';
 
-	for (; n <= 'f'; n++)
+	for (; c <= 'f'; c++)
 	{
-		putchar(n);
+		putchar(c);
 	}
 
 	putchar('\n');
