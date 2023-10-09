@@ -5,15 +5,17 @@
  *
  * Return: 0
  */
-                                                                                                                                                     int main(void)                                                                                                                                       {
-        int i;
-        int j;
 
-        for (i = 0; i <= 8; i++)
-        {
-                for (j = 1; j <= 9; j++)
+int main(void)
+{
+	int i = 0;
+	int j = 1;
+
+	for (; i <= 8;)
+	{
+		for (; j <= 9;)
                 {
-                        putchar(i + 48);
+			putchar(i + 48);
                         putchar(j + 48);
                         if (i != 8 || j != 9)
                         {
@@ -21,8 +23,11 @@
                                 putchar(32);
                         }
 
+			j++;
+
 
                 }
+		i++
                 j = i + 1;
         }
 
