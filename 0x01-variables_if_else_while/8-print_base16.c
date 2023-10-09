@@ -9,13 +9,12 @@
 int main(void)
 {
 	int n;
+	int c = 'a';
 
 	for (n = 0; n < 10; n++)
 	{
 		putchar(n + 48);
 	}
-
-	int c = 'a';
 
 	for (; c <= 'f'; c++)
 	{
