@@ -16,11 +16,11 @@ int main(void)
 	j = 1;
 	k = 2;
 
-	while (i <= 10)
+	while (i < 8)
 	{
-		while (j <= 10)
+		while (j < 9)
 		{
-			while (k <= 10)
+			while (k < 10)
 			{
 				putchar(i + 48);
 				putchar(j + 48);
