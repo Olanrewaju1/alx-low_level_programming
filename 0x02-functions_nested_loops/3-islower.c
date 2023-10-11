@@ -2,15 +2,15 @@
 
 /**
  * _islower - function to check if a character is lowercase
+ * @c: character argument
  *
  * Return: 1
  */
 
 int _islower(int c)
 {
-	char i;
 
-	if (i >= 'a' && i <= 'z')
+	if (c >= 'a' && c <= 'z')
 	{
 		return (1);
 	}
