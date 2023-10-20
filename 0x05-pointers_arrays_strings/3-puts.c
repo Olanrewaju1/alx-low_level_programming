@@ -2,7 +2,7 @@
 
 /**
  * _puts - function to print string
- * @s:char
+ * @str:char
  *
  * Return: 0
  */
