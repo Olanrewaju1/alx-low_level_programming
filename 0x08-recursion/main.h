@@ -17,5 +17,7 @@ int _sqrt_recursion(int n);
 
 int is_prime_number(int n);
 
+int _sqr_pre(int n, int guess);
+
 
 #endif /*MAIN_H*/
