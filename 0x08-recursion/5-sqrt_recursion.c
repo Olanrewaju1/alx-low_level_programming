@@ -10,18 +10,18 @@
 
 int _sqr_pre(int n, int guess)
 {
-	if (guess * guess == n)
+	if (guess % (n / guess) == 0)
 	{
-		return (n);
+		if (guess * (n / guess) == n)
+		{
+			return (guess);
+		}
+
+		else
+			return (-1);
 	}
-	else if (guess * guess > n)
-	{
-		return (-1);
-	}
-	else
-	{
-		return (_sqr_pre(n, guess + 1));
-	}
+
+	return (_sqr_pre(n, guess + 1));
 }
 
 /**
@@ -39,13 +39,15 @@ int _sqrt_recursion(int n)
 		return (-1);
 	}
 
-	else if (n <= 1)
+	else if (n == 1)
 	{
 		return (1);
 	}
 
-	else
+	else if (n == 0)
 	{
-		return (_sqr_pre(n, 2));
+		return (0);
 	}
+
+	return (_sqr_pre(n, 2));
 }
