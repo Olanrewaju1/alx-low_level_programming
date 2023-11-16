@@ -7,3 +7,5 @@
  *
  * Return: integer from conversion
  */
+
+int _atoi(char *s);
