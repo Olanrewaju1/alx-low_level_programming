@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * string_toupper - function to convert string to uppercase
@@ -20,4 +21,11 @@ char *string_toupper(char *s)
 	}
 
 	return (s);
+}
+
+int main(void)
+{
+	char str[100] = "";
+	string_toupper(str);
+	printf("%s\n",str);
 }
