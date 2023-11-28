@@ -14,11 +14,11 @@ char *rot13(char *str)
 	char encoded[53] = "NOPQRSTUVWXYZABCDEFGHIJLMnopqrstuvwxyzabcdefghijklm";
 	int j, i;
 
-	for (j = 0; data[j] != '\0'; j++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		for (i = 0; str[i] != '\0'; i++)
+		for (j = 0; j < 53; i++)
 		{
-			if (data[j] == str[i])
+			if (str[i] == data[j])
 			{
 				str[i] = encoded[j];
 				break;
