@@ -12,16 +12,15 @@ char *rot13(char *str)
 {
 	char data[53] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char encoded[53] = "NOPQRSTUVWXYZABCDEFGHIJLMnopqrstuvwxyzabcdefghijklm";
-	int j, i;
+	int i, j;
 
-	for (i = 0; str[i] != '\0'; i++)
+	for (i = 0; data[i] != '\0'; i++)
 	{
-		for (j = 0; j < 53; i++)
+		for (j = 0; str[j] != '\0'; j++)
 		{
-			if (str[i] == data[j])
+			if (data[i] == str[j])
 			{
-				str[i] = encoded[j];
-				break;
+				str[j] = encoded[i];
 			}
 		}
 	}
