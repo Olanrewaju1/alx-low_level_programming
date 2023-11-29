@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * rot13 - function to encode a string using the rot13
@@ -7,22 +8,25 @@
  * Return: string
  */
 
-char *rot13(char *str)
+char *rot13(char *s)
 {
-	char data[53] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char encoded[53] = "NOPQRSTUVWXYZABCDEFGHIJLMnopqrstuvwxyzabcdefghijklm";
+	char data[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char reverse[] = "NOPQRSTUVWXYZABCDEFGHIJLMnopqrstuvwxyzabcdefghijklm";
 	int i, j;
 
-	for (i = 0; data[i] != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (j = 0; str[j] != '\0'; j++)
+		for (j = 0; j < 52; j++)
 		{
-			if (data[i] == str[j])
+			if (s[i] == data[j])
 			{
-				str[j] = encoded[i];
+				s[i] = reverse[j];
+				break;
 			}
 		}
 	}
 
-	return (*str);
+	return (s);
+
+	
 }
