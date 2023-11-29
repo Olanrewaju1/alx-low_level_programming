@@ -1,9 +1,8 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * rot13 - function to encode a string using the rot13
- * @str: string to be encoded
+ * @s: string to be encoded
  *
  * Return: string
  */
@@ -28,6 +27,4 @@ char *rot13(char *s)
 	}
 
 	return (s);
-
-	
 }
