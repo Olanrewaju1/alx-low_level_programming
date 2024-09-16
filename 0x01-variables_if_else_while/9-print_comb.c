@@ -14,10 +14,10 @@ int main(void)
 
 	num = '0';
 
-	while(num <= '9')
+	while (num <= '9')
 	{
 		putchar(num);
-		if(num == '9')
+		if (num == '9')
 		{
 			break;
 		}
