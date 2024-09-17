@@ -16,7 +16,6 @@ int main(void)
 	for (first_d = 0; first_d <= 8; first_d++)
 	{
 		second_d = first_d + 1;
-		
 		for (; second_d <= 9; second_d++)
 		{
 			putchar(first_d + '0');
